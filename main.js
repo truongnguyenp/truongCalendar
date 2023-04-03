@@ -2,7 +2,18 @@ const handlePopup = (event) => {
   console.log("ok");
   const username = document.getElementById("username").value;
   const popup = document.getElementById("popup");
-  popup.style.display = "block";
+  if (!username) {
+    alert("Pls input username")
+    return;
+  }
+  if (document.getElementById("addAppointment").textContent == "Hide add appointment") {
+    popup.style.display = "none";
+    (document.getElementById("addAppointment")).textContent = "Add Appointment"
+  } else {
+    popup.style.display = "block";
+    (document.getElementById("addAppointment")).textContent = "Hide add appointment"
+
+  }
 };
 const form = document.querySelector("form");
 const nameInput = document.querySelector("#name");
