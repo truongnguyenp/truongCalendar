@@ -12,16 +12,16 @@ label {
   margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="datetime-local"],
-input[type="checkbox"] {
+input[type='text'],
+input[type='datetime-local'],
+input[type='checkbox'] {
   padding: 8px 12px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-button[type="submit"] {
+button[type='submit'] {
   padding: 5px 10px;
   background-color: #4caf50;
   color: #fff;
@@ -30,7 +30,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+button[type='submit']:hover {
   background-color: #3e8e41;
 }
 #popup {
@@ -48,12 +48,16 @@ button[type="submit"]:hover {
   border-radius: 1rem;
   width: 200px;
 }
-center {
+.center {
   margin: 0 auto;
+  display: flex;
   justify-content: center;
+  row-gap: 1rem;
+  flex: 1;
+  gap: 12px;
 }
 .btn {
-  padding: 4px 4px;
+  padding: 2px;
   border-radius: 0.4rem;
   border: 1px solid #1677ff;
   color: #fff;
