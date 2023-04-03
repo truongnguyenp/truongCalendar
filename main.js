@@ -38,6 +38,7 @@ const reloadAppointments = () => {
   const appointments =
     JSON.parse(localStorage.getItem(LOCAL_STORAGE_APPOINTMENTS_KEY)) || [];
   const appointmentsContainer = document.querySelector("#appointments");
+  appointmentsContainer.innerHTML = "";
   appointments.forEach((appointment) => {
     const appointmentElement = document.createElement("div");
     appointmentElement.classList.add("appointment");
@@ -72,14 +73,7 @@ form.addEventListener("submit", function (e) {
     return;
   }
 
-  // check if appointment conflicts with existing appointments
-  // if there is a conflict, show a warning message and ask user to choose an available time or replace the previous appointment
 
-  // check if appointment is similar to an existing group meeting
-  // if it is, ask user if they intended to join the group meeting instead
-
-  // add appointment to calendar's list of appointments
-  // add reminder (if selected) to list of reminders
   const meetingIndex = meetingExistedIndex(name, startTime, endTime);
   if (meetingIndex < 0)
     addToStorage({
