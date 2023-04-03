@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script lizz></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="center">
+      <input type="text" id="username" placeholder="input your username" />
+
+      <button onclick="handlePopup(Event)" class="btn">Add appointment</button>
+    </div>
+    <div id="appointments"></div>
+    <form id="popup">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" /><br /><br />
+      <label for="start-time">Start Time:</label>
+      <input
+        type="datetime-local"
+        id="start-time"
+        name="start-time"
+      /><br /><br />
+      <label for="end-time">End Time:</label>
+      <input type="datetime-local" id="end-time" name="end-time" /><br /><br />
+      <label for="reminder">Reminder:</label>
+      <input type="checkbox" id="reminder" name="reminder" /><br /><br />
+      <button type="submit" id="submit-btn">Make new Appointment</button>
+    </form>
+    <script src="main.js
+  "></script>
+  </body>
+</html>

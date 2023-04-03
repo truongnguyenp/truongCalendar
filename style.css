@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="checkbox"] {
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+#popup {
+  display: none;
+}
+#appointments {
+  padding: 40px 40px;
+}
+.appointment {
+  padding: 12px 12px;
+  color: #fff;
+  font-size: 18px;
+  border: 1px solid #3e8e41;
+  background-color: rgb(246, 191, 38);
+  border-radius: 1rem;
+  width: 200px;
+}
+center {
+  margin: 0 auto;
+  justify-content: center;
+}
+.btn {
+  padding: 4px 4px;
+  border-radius: 0.4rem;
+  border: 1px solid #1677ff;
+  color: #fff;
+  background-color: #1677ff;
+  box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+}
