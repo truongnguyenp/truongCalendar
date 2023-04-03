@@ -41,11 +41,14 @@ const reloadAppointments = () => {
   appointments.forEach((appointment) => {
     const appointmentElement = document.createElement("div");
     appointmentElement.classList.add("appointment");
-    appointmentElement.innerHTML = `    <div class="appointment-name">${appointment.name}</div>
-        <div class="appointment-location">${appointment.location}</div>
-        <div class="appointment-time">${appointment.startTime} - ${appointment.endTime}</div>
-        <div class="appointment-participantList">${appointment.participantList}</div>
-        <div class="appointment-reminder">${appointment.reminder}</div>`;
+    appointmentElement.innerHTML = `    <div class="appointment-name"> Meeting name: ${appointment.name}</div>
+        <div class="appointment-location"> Location: ${appointment.location}</div>
+        <div class="appointment-time">Start time: ${Date.parse(appointment.startTime)}</div>
+        <div class="appointment-time">End time: ${Date.parse(appointment.endTime)}</div>
+        <div class="appointment-time">Duration: ${(Date.parse(appointment.endTime) - Date.parse(appointment.startTime)) / 86400} h</div>
+        <div class="appointment-participantList">ParticipantList: ${appointment.participantList}</div>
+        <div class="appointment-reminder">${appointment.reminder ? "Reminded" : "Not reminded"
+      }</div > `;
     appointmentsContainer.appendChild(appointmentElement);
   });
 };
